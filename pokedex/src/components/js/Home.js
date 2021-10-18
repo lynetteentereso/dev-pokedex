@@ -7,7 +7,7 @@ const Home = () => {
     const Pokemon = useSelector(state => state.Pokemon);
 
     return (
-        <div className='pokemon-display flex-colwrap-center-center'>
+        <div className='pokemon-display'>
             {
             Pokemon.map( pokemon => 
               <div className='pokemon flex-colwrap-center-center'>

@@ -17,9 +17,17 @@
 .pokemon-display{
     width: 90%;
     margin: 120px auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
 .pokemon{
     margin: 10px auto;
+    transition: .5s ease-in;
+}
+.pokemon:hover{
+    transform: scale(1.1)
 }
 .pokemon small, h2{
     text-align: center;
@@ -35,11 +43,46 @@
 
 /* Media Queries Default:  Mobile First */
 
-/* Medium Devices*/
 @media only screen and (min-width: 768px){
     .img-container img{
         width: 60%;
-        height: 43vh;
+        height: 38vh;
+    }
+    .pokemon{
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .img-container img{
+        width: 60%;
+        height: 50vh;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .pokemon-display{
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .pokemon {
+        width: 30%;
+        margin-bottom: 15px;
+    }
+    .img-container img{
+        width: 100%;
+        height: 55vh;
+    }
+}
+@media only screen and (min-width: 1300px){
+    .pokemon {
+        width: 23%;
+        margin: 10px 20px 25px 20px;
+    }
+    .img-container img{
+        width: 100%;
+        height: 45vh;
     }
 }
 
