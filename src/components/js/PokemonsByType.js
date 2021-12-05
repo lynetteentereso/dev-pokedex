@@ -13,7 +13,7 @@ const PokemonsByType = () => {
                 Pokemon.filter(pokemon => {if(type === 'All') {return pokemon;} return pokemon.types.includes(type);}).map(pokemon =>
                     <div className='pokemon flex-colwrap-center-center'>
                         <div className='img-container flex-colwrap-center-center'>
-                            <Link to={`/${pokemon.name}`}><img src={pokemon.image} /></Link>
+                            <Link to={`/${pokemon.name}`}><img src={pokemon.image} alt={`/${pokemon.name}`} /></Link>
                         </div>
                         <small>{ pokemon.ntnlnum }</small>
                         <h2>{ pokemon.name }</h2>
