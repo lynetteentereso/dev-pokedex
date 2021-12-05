@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import '../css/Home.css'
+import '../css/Home.css';
 
 const PokemonsByType = () => {
     const Pokemon = useSelector(state => state.Pokemon);
